@@ -1,0 +1,468 @@
+
+/*--Main styling--*/
+body{
+    background-color: #FDFFFC;
+    margin-bottom:20px;
+    color: #011627;
+    text-align: center;
+}
+
+.home{
+    padding: 0 4px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    text-decoration: none;
+    background-color: #2EC4B6;
+    color:#fff;
+}
+.home:hover{
+    background-color:#E71D36;
+    color:#fff;
+}
+
+
+.hero{
+    width: 100vw;
+    height: 90vh;
+    padding: 40px;
+}
+
+.img-title{
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 1px #E71D36,  
+    1px -1px 1px #2EC4B6,
+    -1px 1px 1px #E71D36,
+    1px 1px 1px #2EC4B6;
+    
+}
+.box {
+    padding: 5px;
+    margin: 10px;
+}
+/*--Styling for video, audio, scripts, for the reasearch pages--*/
+
+video {
+    border-radius: 1%;
+    max-width: 100%;
+}
+
+audio{
+    padding: 10px;
+}
+
+.play-script{
+    display: block;
+    margin: 5px auto;
+    max-width: 600px;
+}
+
+
+@media  only screen and (max-width: 991px) {
+    .play-script{
+        max-width: 80%;
+    }
+}
+
+.blue{
+    border: 2px solid #2EC4B6;
+}
+
+.red{
+    border: 2px solid #E71D36;
+}
+
+/*--Tilit images styling--*/
+.visuals {
+    text-align: center;
+}
+.visuals img{
+    width: 30%;
+    padding: 10px;
+}
+
+.tilt{
+    padding-top: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.img-border{
+    z-index: 1;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+.hero-img {   
+    z-index: -1;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media  only screen and (max-width: 991px) {
+    .tilt {
+        display: none;
+    }
+    .img-title{
+        position: relative;
+        top: 10%;
+        z-index: 1;
+        
+    }
+}
+
+
+/*--Title, header, and conclusion styling--*/
+.topic-intro{
+    width: 100%;
+    height: 100%;
+}
+
+#title{
+    text-decoration: underline #2EC4B6 solid;
+    display: inline-block;
+}
+#subtitle::after{
+    content: "";
+    position: relative;
+    margin-top: 1.5px;
+    height: 3px;
+    background-color: #E71D36;
+    width: 100%;
+    display: block;
+}
+
+.intro{
+    padding:10px 20px;
+}
+
+.header{
+    padding: 0px 20px;
+}
+
+.conclusion{
+    margin: -40px auto auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.conclusion-content{
+    flex-basis: 3;
+    width: 100%;
+}
+.conclusion .vid-container{
+    width: 340px;
+    height: 600px;
+    margin: 10px;
+    background-color: #000000;
+}
+
+@media only screen and (max-width:  767px){
+    .conclusion{
+        flex-flow: column nowrap;
+    }
+    .conclusion-content {
+        margin: auto;
+    }
+    .conclusion .vid-container{
+        flex-basis: 1;
+        margin: 10px auto;
+    }
+    .conclusion-content .title {
+        text-align: left;
+    }
+
+}
+
+
+.line{
+
+    content: "";
+    height: 2px;
+    width: 60%;
+    background: #011627;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+#timeline-title{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bibliography{
+    text-align: left;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+.caption{
+    font-size: 0.5em;
+    text-decoration: none;
+    color: #000;
+}
+/*this makes a hanging indent for mla style citations*/
+.source {
+    margin-left: 30px;
+    text-indent: -30px;
+    padding-top: 10px;
+}   
+.art {
+    padding-top: 10px;
+} 
+/*--Timeline Styling- this code was originally taken from bootdey.com--*/
+.end .timeline .timeline-content{
+    height: 100px;
+    margin-bottom: 0;
+}
+.end .timeline .icon{
+    top:100px;
+    margin-bottom: 0;
+}
+.main-timeline {
+    position: relative;
+    padding-top: 100px;
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #011627;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-timeline .timeline {
+    margin-bottom: 50px;
+    height: 100%;
+    position: relative;
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s;
+}
+
+.main-timeline .icon:before {
+    background: #FDFFFC;
+    border: 2px solid #2EC4B6;
+    left: -3px;
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #E71D36;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .img-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative;
+}
+
+.main-timeline .img-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #011627;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .img-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-timeline .img-outer:before,
+.main-timeline .img-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .img-outer:before {
+    border: 2px solid #2EC4B6;
+    left: -6px;
+    bottom: -6px;
+}
+
+.main-timeline .img-outer:after {
+    border: 2px solid #E71D36;
+    left: 6px;
+    bottom: 6px;
+}
+
+.main-timeline .timeline:hover .img-outer:before {
+    left: 6px;
+    bottom: 6px;
+}
+
+.main-timeline .timeline:hover .img-outer:after {
+    left: -6px;
+    bottom: -6px;
+}
+
+.main-timeline img {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    left: 0
+}
+
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right;
+    height: 100%;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+.main-timeline .description {
+    margin-bottom: 0;
+}
+
+.main-timeline .timeline:nth-child(2n) .img-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .img-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .img-content {
+        margin-top: 35px
+    }
+    .main-timeline .img-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .img-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .img-content:before {
+        display: none
+    }
+    .main-timeline .img-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .img-outer:before,
+    .main-timeline .img-outer:after {
+        width: 110px;
+        height: 110px
+    }
+
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
